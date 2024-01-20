@@ -24,6 +24,13 @@ Addon.data.chores.choresDragonflight = {
             key = 'patch_10_2_0',
             quests = {
                 {
+                    key = 'worldBoss',
+                    minimumLevel = 70,
+                    entries = {
+                        { quest = 76367 }, -- Hibernation Heroes
+                    },
+                },
+                {
                     key = 'aWorthyAlly',
                     minimumLevel = 70,
                     entries = {
@@ -104,6 +111,13 @@ Addon.data.chores.choresDragonflight = {
             },
             quests = {
                 {
+                    key = 'worldBoss',
+                    minimumLevel = 70,
+                    entries = {
+                        { quest = 74892 }, -- Zaqali Elders
+                    },
+                },
+                {
                     key = 'aWorthyAlly',
                     minimumLevel = 70,
                     entries = {
@@ -177,6 +191,21 @@ Addon.data.chores.choresDragonflight = {
                     inProgressQuestName = false,
                     entries = {
                         { quest=74378 }, -- Resisting the Storm
+                    },
+                },
+            },
+        },
+        {
+            key = 'patch_10_0_2',
+            quests = {
+                {
+                    key = 'worldBoss',
+                    minimumLevel = 70,
+                    entries = {
+                        { quest=69927 }, -- Bazual
+                        { quest=69928 }, -- Liskanoth
+                        { quest=69929 }, -- Strunraan
+                        { quest=69930 }, -- Basrikron
                     },
                 },
             },

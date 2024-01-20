@@ -17,6 +17,7 @@ L['category:event'] = 'Event'
 L['category:holidays'] = 'Weekly Holidays'
 L['category:holidays2'] = 'Holidays'
 L['category:patch_10_0_0'] = 'Patch 10.0.0'
+L['category:patch_10_0_2'] = 'Patch 10.0.2'
 L['category:patch_10_0_5'] = 'Patch 10.0.5'
 L['category:patch_10_0_7'] = 'Patch 10.0.7'
 L['category:patch_10_1_0'] = 'Patch 10.1.0'
@@ -35,6 +36,7 @@ L['chore:dragonflight:catchAndRelease:quests:releaseThousandbite'] = 'Thousandbi
 
 L['chore:dragonflight:patch_10_2_5:quests:bigDig'] = 'The Big Dig'
 
+L['chore:dragonflight:patch_10_2_0:quests:worldBoss'] = 'World Boss'
 L['chore:dragonflight:patch_10_2_0:quests:aWorthyAlly'] = 'A Worthy Ally'
 L['chore:dragonflight:patch_10_2_0:quests:bloomingDreamseeds'] = 'Plant Seeds'
 L['chore:dragonflight:patch_10_2_0:quests:superbloom'] = 'Superbloom'
@@ -47,6 +49,7 @@ L['chore:dragonflight:patch_10_1_5:quests:timeRift'] = 'Time Rift'
 L['chore:dragonflight:patch_10_1_5:quests:timeRiftAccount'] = 'Time Rift (Account)'
 
 L['chore:dragonflight:patch_10_1_0:drops:sniffenseeking'] = 'Sniffenseeking'
+L['chore:dragonflight:patch_10_1_0:quests:worldBoss'] = 'World Boss'
 L['chore:dragonflight:patch_10_1_0:quests:aWorthyAlly'] = 'A Worthy Ally'
 L['chore:dragonflight:patch_10_1_0:quests:barter'] = 'Bartering'
 L['chore:dragonflight:patch_10_1_0:quests:fyrakkAssault'] = 'Fyrakk: Assault'
@@ -54,6 +57,8 @@ L['chore:dragonflight:patch_10_1_0:quests:fyrakkDisciple'] = 'Fyrakk: Disciple'
 L['chore:dragonflight:patch_10_1_0:quests:fyrakkShipment'] = 'Fyrakk: Shipment'
 
 L['chore:dragonflight:patch_10_0_5:quests:primalistFuture'] = 'Primalist Future'
+
+L['chore:dragonflight:patch_10_0_2:quests:worldBoss'] = 'World Boss'
 
 L['chore:dragonflight:patch_10_0_0:quests:aidingTheAccord'] = 'Aiding the Accord'
 L['chore:dragonflight:patch_10_0_0:quests:communityFeast'] = 'Community Feast'
