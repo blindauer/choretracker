@@ -201,6 +201,7 @@ Addon.data.chores.choresDragonflight = {
                 {
                     key = 'worldBoss',
                     minimumLevel = 70,
+                    isWorldBoss = true,
                     entries = {
                         { quest=69927 }, -- Bazual
                         { quest=69928 }, -- Liskanoth

@@ -7,6 +7,7 @@ local CDAT_GetSecondsUntilWeeklyReset = C_DateAndTime.GetSecondsUntilWeeklyReset
 local CQL_GetQuestObjectives = C_QuestLog.GetQuestObjectives
 local CQL_IsOnQuest = C_QuestLog.IsOnQuest
 local CQL_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted
+local CTQ_GetQuestsForPlayerByMapID = C_TaskQuest.GetQuestsForPlayerByMapID
 
 local DATA_TYPES = {
     'drops',
@@ -126,7 +127,13 @@ function Module:InitializeData()
                         
                         if choreData.entries ~= nil then
                             for _, choreEntry in ipairs(choreData.entries) do
-                                self.questPaths[choreEntry.quest] = choreKey
+                                if choreData.isWorldBoss == true then 
+                                    if self:IsDragonflightWorldQuestAvailable(choreEntry.quest) then
+                                        self.questPaths[choreEntry.quest] = choreKey
+                                    end
+                                else
+                                    self.questPaths[choreEntry.quest] = choreKey
+                                end
                             end
                         end
 
@@ -264,6 +271,20 @@ function Module:ScanQuests(forceChanged)
     if anyChanges or forceChanged then
         self:SendMessage('ChoreTracker_Data_Updated', 'quests')
     end
+end
+
+function Module:IsDragonflightWorldQuestAvailable(worldQuestId)
+    local dragonflightZones = { 2022, 2023, 2024, 2025 }
+    for _, zone in pairs(dragonflightZones) do
+        local taskInfo = CTQ_GetQuestsForPlayerByMapID(zone)
+        for _, info in pairs(taskInfo) do
+            if info.questId == worldQuestId then 
+                return true
+            end
+        end
+    end
+
+    return false
 end
 
 function Module:AddObjectives(weekData, newData)
